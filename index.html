@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>index</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.3.0.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <script>
+$(function() {
+  var $win = $(window),
+      $header = $('.navbar'),
+      animationClass = 'is-animation';
+
+  $win.on('load scroll', function() {
+    var value = $(this).scrollTop();
+    if ( value > 100 ) {
+      $header.addClass(animationClass);
+    } else {
+      $header.removeClass(animationClass);
+    }
+  });
+});
+    </script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({mode:'horizontal',
+                            pause:4000,
+                            auto:'true',
+                            captions: 'true',
+                            })
+    });
+</script>
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/pa_logo.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">ホーム <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">コンセプト</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">最新情報</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">アクセス</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">お問い合わせ</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container-fluid">
+    <div class="first_view">
+      <img src="images/main_visual_pc.jpg" alt="" id="key_visual">
+      <img src="images/taisaku.jpg" alt="" id="taisaku">
+      <img src="images/online_view.jpg" alt="" id="online_view">
+    </div>
+    <div class="row" id="concept">
+      <h2>CONCEPT<br>
+        -パジュ・アージュのおもてなし-</h2>
+      <div class="col-6 offset-3">
+        <a href="#">
+          <img src="images/omotenashi.jpg" alt="" class="img-fluid" id="concept_image">
+        </a>
+      </div>
+    </div>
+    <div class="row" id="news">
+      <h2>NEWS<br>
+        -お知らせ-</h2>
+      <div class="col-sm-8 offset-sm-2">
+        <div class="news_item">
+          <div class="news_text">
+            <h3>10月27日</h3>
+            <p>お知らせお知らせお知らせお知らせお知らせお知らせお知らせ</p>
+          </div>
+          <img src="images/new_image01.png" alt="">
+        </div>
+        <div class="news_item">
+          <div class="news_text">
+            <h3>10月13日</h3>
+            <p>お知らせお知らせお知らせお知らせお知らせお知らせお知らせ</p>
+          </div>
+          <img src="images/new_image02.png" alt="" class="img-fluid">
+        </div>
+        <div class="news_item">
+          <div class="news_text">
+            <h3>10月06日</h3>
+            <p>お知らせお知らせお知らせお知らせお知らせお知らせお知らせ</p>
+          </div>
+          <img src="images/new_image03.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h2>BRIDAL FAIR<br>
+        -ブライダル・フェア-</h2>
+      <div class="col-sm-4 offset-sm-2" id="new_fair">
+
+        <figure>
+          <img src="images/fair_image01.png" alt="">
+          <figcaption>
+            <h3>10月日</h3>
+            文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-sm-4" id="fairs">
+        <figure>
+          <img src="images/fair_image02.png" alt="">
+          <figcaption>
+            <h3>10月日</h3>
+            文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/fair_image03.png" alt="">
+          <figcaption>
+            <h3>10月日</h3>
+            文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。文が入ります。
+          </figcaption>
+        </figure>
+      </div>
+
+
+    </div>
+    <div class="row">
+      <h2>FAIR CALENDAR<br>
+        -日付から選ぶ-</h2>
+      <div class="col-sm-5 offset-sm-1" id="calendar"><img src="images/november_calendar.png" alt="november" class="img-fluid"></div>
+      <div class="col-sm-5" id="calendar"><img src="images/december_calendar.png" alt="december" class="img-fluid"></div>
+    </div>
+    <div class=" row">
+        <h2>CEREMONY<br>
+          -挙式-</h2>
+        <div class="col-6-sm ceremony">
+            <div class="bx-wrapper slider">
+            <div><img src="images/wedding_style01.png" alt="" title="和装"></div>
+            <div><img src="images/wedding_style02.png" alt="" title="教会式"></div>
+            <div><img src="images/wedding_style03.png" alt="" title="人前式"></div>
+        </div> 
+        </div>
+      </div>
+
+      <div class="row">
+        <h2>CUSTOMER'S VOICE<br>
+          -お客様の声-</h2>
+        <div class="col-8-sm offset-sm-2" id="customer_voice">
+          <img src="images/customer's_voice.jpg" alt="">
+          <img src="images/customer's_voice.jpg" alt="">
+          <img src="images/customer's_voice.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <h2>CONTACT<br>
+          お問い合わせ</h2>
+        <div class="col-8-sm" id="contact">
+          <ul>
+            <li><a href="#"><img src="images/icon_siryouseikyuu.png" alt="" class="img-fluid"></a></li>
+            <li><a href="#"><img src="images/icon_otoiawase.png" alt="" class="img-fluid"></a></li>
+            <li><a href="#"><img src="images/icon_bridalfair.png" alt="" class="img-fluid"></a></li>
+          </ul>
+        </div>
+      </div>
+       <div class="sns">
+         <p>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-line"></i>
+        </p>
+       </div>
+    </div>
+
+    <footer>
+      <div id="footer_wrapper">
+        <h4>パジュ・アージュのご案内-Pudu Age GUIDE-</h4>
+        <div id="footer_contents">
+          <div class="footer_list">
+            <ul>
+              <li><a href="index.html">トップページ</a></li>
+              <li><a href="#">コンセプト</a></li>
+              <li><a href="#">お知らせ</a></li>
+              <li><a href="#">ブライダルフェア</a></li>
+              <li><a href="#">カレンダー</a></li>
+              <li><a href="#">採用情報</a></li>
+            </ul>
+          </div>
+          <div class="footer_list">
+            <ul>
+              <li><a href="#">アクセス</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#">ウェディングプラン</a></li>
+              <li><a href="#">フォトギャラリー</a></li>
+              <li><a href="#">レストラン＆パーティ</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+            </ul>
+          </div>
+          <div class="footer_list">
+            <ul>
+              <li><a href="#">資料請求</a> </li>
+              <li><a href="#">フェイスブック</a></li>
+              <li><a href="#">インスタグラム</a></li>
+              <li><a href="#">ライン</a></li>
+            </ul>
+          </div>
+        </div>
+        <p>&copy;Pudu Age</p>
+      </div>
+    </footer>
+
+</body>
+
+</html>
